@@ -1,5 +1,5 @@
 import React from "react";
-import Fade from "react-reveal/Fade";
+import Bounce from "react-reveal/Bounce";
 
 const Photo = ({
   urls: { regular },
@@ -12,7 +12,7 @@ const Photo = ({
   },
 }) => {
   return (
-    <Fade bottom duration={3000} delay={1000}>
+    <Bounce bottom right delay={1000} duration={1000}>
       <article className="photo">
         <img src={regular} alt={alt_description} />
         <div className="photo-info">
@@ -25,7 +25,7 @@ const Photo = ({
           </a>
         </div>
       </article>
-    </Fade>
+    </Bounce>
   );
 };
 

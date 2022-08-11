@@ -59,16 +59,14 @@ Global Styles
   box-sizing: border-box;
 }
 body {
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen,
-    Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-  /* background: var(--clr-white); */
-  background: #bdc3c7;  /* fallback for old browsers */
-  background: -webkit-linear-gradient(to right, #2c3e50, #bdc3c7);  /* Chrome 10-25, Safari 5.1-6 */
-  background: linear-gradient(to right, #2c3e50, #bdc3c7); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
-
-  color: var(--clr-grey-1);
   line-height: 1.5;
   font-size: 0.875rem;
+}
+.dark-theme {
+  background: #282c35;
+}
+.light-theme {
+  background: var(--clr-white);
 }
 ul {
   list-style-type: none;
@@ -176,14 +174,14 @@ Stock Photos
   letter-spacing: var(--spacing);
   font-size: 1.5rem;
   background: transparent;
-  color: #FFF8BC;
-  border-bottom: 3px solid #FFF8BC;
+  color: #CC9C75;
+  border-bottom: 3px solid #CC9C75;
 }
 .form-input {
-  color: #FFF8BC;
+  color: #CC9C75;
 }
 .form-input::placeholder {
-  color: #FFF8BC;
+  color: #CC9C75;
 }
 .photos {
   padding: 5rem 0;
@@ -245,7 +243,6 @@ Stock Photos
     max-width: var(--fixed-width);
   }
 }
-
 .loading {
   margin: 30px 700px;
   margin-top: 20rem;
